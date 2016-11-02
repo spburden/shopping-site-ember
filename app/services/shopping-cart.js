@@ -2,11 +2,18 @@ import Ember from 'ember';
 
 export default Ember.Service.extend({
   items: [],
-  total: 0,
+  total: 0.00,
 
   add(item) {
-    this.get('items').pushObject(item);
-    this.totalCart(this.get('items'));
+    if(item.get('alreadyInCart') === false && item.get('quantity') > 0) {
+      this.get('items').pushObject(item);
+    }
+    if(item.get('quantity') > 0) {
+      item.set('quantity', (item.get('quantity')-1));
+      item.set('numberInCart', (item.get('numberInCart')+1));
+      var newTotal = parseFloat(this.get('total')) + parseFloat(item.get('price'));
+      this.set("total", newTotal.toFixed(2));
+    }
   },
   remove(item) {
     var index = this.get('items').indexOf(item);
@@ -15,12 +22,9 @@ export default Ember.Service.extend({
   includes(item) {
     return this.get('items').includes(item);
   },
-  totalCart(items) {
-    var total2 = 0;
-    for (var i = 0; i < items.length; i++) {
-      total2+=items[i].data.price;
-    }
-    this.set("total", total2);
+  clearCart() {
+    this.set("items", []);
+    this.set("total", 0);
   }
 
 });

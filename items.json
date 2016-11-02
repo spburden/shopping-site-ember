@@ -3,12 +3,14 @@
     "description": "HERO4 cameras take Emmy® Award-winning GoPro performance to a whole new level.",
     "price": 199.99,
     "quantity": 15,
-    "image": "http://demandware.edgesuite.net/aasj_prd/on/demandware.static/-/Sites-gopro-products/default/dwc295831c/cam-represent/cam-represent-HERO4-black.jpg"
+    "image": "http://demandware.edgesuite.net/aasj_prd/on/demandware.static/-/Sites-gopro-products/default/dwc295831c/cam-represent/cam-represent-HERO4-black.jpg",
+    "numberInCart": 0
   },{
     "name": "Sony Playstation 4",
     "description": "The PlayStation ®4 system. Now Starting at $299.99. The new slim PlayStation®4 opens the door to extraordinary journeys through immersive new gaming worlds and a deeply connected gaming community.",
     "price": 299.99,
     "quantity": 5,
-    "image": "http://images.cdn.whathifi.com/sites/whathifi.com/files/styles/big-image/public/SonyPS4v1.jpg?itok=WfWrtMYD"
+    "image": "http://images.cdn.whathifi.com/sites/whathifi.com/files/styles/big-image/public/SonyPS4v1.jpg?itok=WfWrtMYD",
+    "numberInCart": 0
   }]
 }

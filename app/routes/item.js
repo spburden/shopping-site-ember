@@ -20,7 +20,6 @@ export default Ember.Route.extend({
       }
       if(sameItemCount < itemQuantity){
         this.get('shoppingCart').add(item);
-
       } else {
         alert(item.data.name + ' Is No Longer In Stock');
       }
@@ -30,6 +29,17 @@ export default Ember.Route.extend({
       this.get('shoppingCart').remove(item);
       //console.log(item.id);
       this.transitionTo('item', item.id);
-    }
+    },
+    checkout(shoppingCart){
+      var itemsArray = [];
+      for (var i = 0; i < shoppingCart.items.length; i++) {
+        if (itemsArray.indexOf(shoppingCart.items[i]) === -1) {
+          itemsArray.push(shoppingCart.items[i]);
+
+        }
+      }
+      console.log(itemsArray);
+
+    },
   }
 });

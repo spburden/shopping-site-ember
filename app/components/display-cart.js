@@ -7,5 +7,9 @@ export default Ember.Component.extend({
     removeFromCart(item) {
       this.sendAction('refresh', item);
     },
+    checkout(shoppingCart) {
+      this.sendAction('checkout', shoppingCart);
+    },
+
   }
 });
