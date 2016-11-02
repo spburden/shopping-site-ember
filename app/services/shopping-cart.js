@@ -16,13 +16,17 @@ export default Ember.Service.extend({
     }
   },
   remove(item) {
+    console.log(item.get('numberInCart'));
     if(item.get('numberInCart') > 0) {
       var newTotal = parseFloat(this.get('total')) - parseFloat(item.get('price'));
       this.set("total", newTotal.toFixed(2));
       item.set('quantity', (item.get('quantity')+1));
       item.set('numberInCart', (item.get('numberInCart')-1));
     }
-
+    if (item.get('numberInCart') === 0) {
+      this.get('items').removeObject(item);
+    }
+    console.log(this.get('items'));
   },
   includes(item) {
     return this.get('items').includes(item);
