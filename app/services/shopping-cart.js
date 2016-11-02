@@ -10,5 +10,4 @@ export default Ember.Service.extend({
    this.get('items').removeObject(item);
   },
 
-
 });
