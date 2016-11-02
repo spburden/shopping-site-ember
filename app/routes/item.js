@@ -25,10 +25,8 @@ export default Ember.Route.extend({
       }
     },
     refresh(item){
-      console.log(item);
       this.get('shoppingCart').remove(item);
       //console.log(item.id);
-      this.transitionTo('item', item.id);
     },
     checkout(shoppingCart){
       var itemsArray = [];
@@ -38,7 +36,6 @@ export default Ember.Route.extend({
 
         }
       }
-      console.log(itemsArray);
 
     },
   }
