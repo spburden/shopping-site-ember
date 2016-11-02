@@ -1,0 +1,10 @@
+{ "items": [{
+    "name": "GoPro Hero4",
+    "description": "HERO4 cameras take Emmy® Award-winning GoPro performance to a whole new level.",
+    "price": 199.99,
+    "quantity": 15,
+    "image": "http://demandware.edgesuite.net/aasj_prd/on/demandware.static/-/Sites-gopro-products/default/dwc295831c/cam-represent/cam-represent-HERO4-black.jpg"
+  }
+
+  ]
+}
