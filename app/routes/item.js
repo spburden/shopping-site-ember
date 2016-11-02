@@ -24,12 +24,12 @@ export default Ember.Route.extend({
       } else {
         alert(item.data.name + ' Is No Longer In Stock');
       }
-      console.log(this.get('shoppingCart'));
     },
     refresh(item){
       console.log(item);
       this.get('shoppingCart').remove(item);
-      this.refresh();
+      //console.log(item.id);
+      this.transitionTo('item', item.id);
     }
   }
 });

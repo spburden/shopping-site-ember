@@ -9,7 +9,7 @@ export default DS.Model.extend({
   image: DS.attr(),
 
   shoppingCart: Ember.inject.service(),
-  alreadyInCart: Ember.computed('shoppingCart.items.[]', function() {
-    return this.get('shoppingCart').includes(this);
-  })
+  // alreadyInCart: Ember.computed('shoppingCart.items.[]', function() {
+  //   return this.get('shoppingCart').includes(this);
+  // })
 });

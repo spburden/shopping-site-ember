@@ -6,6 +6,7 @@
     "ember-qunit-notifications": "0.1.0",
     "semantic-ui": "^2.2.6",
     "bootstrap": "~3.3.5",
-    "firebase": "^3.0.0"
+    "firebase": "^3.0.0",
+    "font-awesome": "~4.5.0"
   }
 }

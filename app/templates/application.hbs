@@ -1,4 +1,25 @@
-{{#link-to 'index'}}Home{{/link-to}}
-<div class="container">
-  {{outlet}}
+<div class="ui fixed inverted menu">
+  <div class="ui container">
+    <div class="header item">
+      Electronics Store
+    </div>
+    {{#link-to 'index' class="header item"}}Home{{/link-to}}
+  </div>
+  <div class="ui button nav navbar-nav navbar-right blue item" {{action 'toggleSidebar' 'sub-sidebar'}}>{{fa-icon "bars"}}</div>
+</div>
+
+
+<div class="ui pushable segment component context">
+  {{#ui-sidebar class="inverted menu right inline vertical" context=".component.context" id="sub-sidebar"}}
+    <br>
+    <br>
+    <span class="item">{{#link-to 'index'}}Home{{/link-to}}</span>
+    <span class="item">{{display-cart}}</span>
+  {{/ui-sidebar}}
+  <div class="pusher">
+    <div class="ui basic segment" style="height: 100%;">
+      <br><br>
+      {{outlet}}
+    </div>
+  </div>
 </div>
