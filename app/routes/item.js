@@ -20,9 +20,16 @@ export default Ember.Route.extend({
       }
       if(sameItemCount < itemQuantity){
         this.get('shoppingCart').add(item);
+
       } else {
-        alert('Item No Longer In Stock');
+        alert(item.data.name + ' Is No Longer In Stock');
       }
+      console.log(this.get('shoppingCart'));
     },
+    refresh(item){
+      console.log(item);
+      this.get('shoppingCart').remove(item);
+      this.refresh();
+    }
   }
 });
