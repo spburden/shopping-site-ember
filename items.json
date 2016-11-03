@@ -12,5 +12,12 @@
     "quantity": 5,
     "image": "http://images.cdn.whathifi.com/sites/whathifi.com/files/styles/big-image/public/SonyPS4v1.jpg?itok=WfWrtMYD",
     "numberInCart": 0
+  },{
+    "name": "Warscapia",
+    "description": "Sparrow wants to be the greatest warrior in all of Warscapia. But he’s not. He’s just a kid with mediocre magic skills.",
+    "price": 0.99,
+    "quantity": 1000,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/515boKz5tPL.jpg",
+    "numberInCart": 0
   }]
 }

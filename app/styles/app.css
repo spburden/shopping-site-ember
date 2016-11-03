@@ -1,3 +1,13 @@
 .white {
   color: white;
 }
+.content {
+  height: 480px;
+  text-align: center;
+}
+img {
+  width: 80%;
+}
+.item-page {
+  width: 30%;
+}

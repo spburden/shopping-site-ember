@@ -6,7 +6,7 @@
     {{#link-to 'index' class="header item"}}Home{{/link-to}}
   </div>
   <div class="ui button nav navbar-nav navbar-right blue item" {{action 'toggleSidebar' 'sub-sidebar'}}>{{fa-icon "shopping-cart"}}</div>
-  <div class="item">{{nav-bar}}</div>
+  {{nav-bar}}
 </div>
 
 
@@ -18,9 +18,11 @@
     <span class="item">{{display-cart checkout="checkout" removeItem="removeItem"}}</span>
   {{/ui-sidebar}}
   <div class="pusher">
-    <div class="ui basic segment" style="height: 100%;">
+    <div class="ui basic segment" style="height: 1250px;">
       <br><br>
-      {{outlet}}
+      <div class="container">
+        {{outlet}}
+      </div>
     </div>
   </div>
 </div>

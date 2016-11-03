@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Service.extend({
   items: [],
   total: 0.00,
+  cart: 0,
 
   add(item) {
     if(item.get('alreadyInCart') === false && item.get('quantity') > 0) {
@@ -13,6 +14,8 @@ export default Ember.Service.extend({
       item.set('numberInCart', (item.get('numberInCart')+1));
       var newTotal = parseFloat(this.get('total')) + parseFloat(item.get('price'));
       this.set("total", newTotal.toFixed(2));
+      var newCart = (this.get('cart')+1);
+      this.set("cart", newCart);
     }
   },
   remove(item) {
