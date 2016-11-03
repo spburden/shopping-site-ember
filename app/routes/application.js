@@ -5,6 +5,12 @@ export default Ember.Route.extend({
   actions:{
     toggleSidebar(){
        Ember.$('#sub-sidebar').sidebar("toggle");
-    }
+    },
+    checkout() {
+       this.get('shoppingCart').checkout();
+    },
+    removeItem(item){
+      this.get('shoppingCart').remove(item);
+    },
   }
 });

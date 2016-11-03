@@ -16,7 +16,6 @@ export default Ember.Service.extend({
     }
 
     //item.save();
-    console.log(this.get('items'));
   },
   remove(item) {
     if(item.get('numberInCart') > 0) {
@@ -24,7 +23,6 @@ export default Ember.Service.extend({
       this.set("total", newTotal.toFixed(2));
       item.set('quantity', (item.get('quantity')+1));
       item.set('numberInCart', (item.get('numberInCart')-1));
-      item.save();
     }
     if (item.get('numberInCart') === 0) {
       this.get('items').removeObject(item);
