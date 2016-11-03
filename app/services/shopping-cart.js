@@ -39,5 +39,6 @@ export default Ember.Service.extend({
     }
     this.set("items", []);
     this.set("total", 0.00);
+    this.set("cart", 0);
   }
 });
