@@ -30,7 +30,6 @@ export default Ember.Service.extend({
     return this.get('items').includes(item);
   },
   checkout() {
-    console.log(this.get('items'));
     for (var i = 0; i < this.get('items').length; i++) {
       this.get('items')[i].set('numberInCart', 0);
       this.get('items')[i].save();
