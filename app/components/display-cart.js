@@ -4,8 +4,8 @@ export default Ember.Component.extend({
   shoppingCart: Ember.inject.service(),
 
   actions: {
-    removeFromCart(item) {
-      this.sendAction('refresh', item);
+    removeItem(item) {
+      this.sendAction('removeItem', item);
     },
     checkout(shoppingCart) {
       this.sendAction('checkout', shoppingCart);

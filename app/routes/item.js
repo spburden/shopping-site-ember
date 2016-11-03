@@ -9,34 +9,26 @@ export default Ember.Route.extend({
 
   actions: {
     addToCart(item) {
-      var itemQuantity = item.data.quantity;
-      //console.log(this.get('shoppingCart'));
-      var cartArray = this.get('shoppingCart').items;
-      var sameItemCount = 0;
-      for (var i = 0; i < cartArray.length; i++) {
-        if(cartArray[i] === item) {
-          sameItemCount++;
-        }
-      }
-      if(sameItemCount < itemQuantity){
-        this.get('shoppingCart').add(item);
-      } else {
-        alert(item.data.name + ' Is No Longer In Stock');
-      }
+      this.get('shoppingCart').add(item);
     },
-    refresh(item){
+    removeItem(item){
       this.get('shoppingCart').remove(item);
-      //console.log(item.id);
     },
-    checkout(shoppingCart){
-      var itemsArray = [];
-      for (var i = 0; i < shoppingCart.items.length; i++) {
-        if (itemsArray.indexOf(shoppingCart.items[i]) === -1) {
-          itemsArray.push(shoppingCart.items[i]);
-
-        }
-      }
-
-    },
+    //checkout(params){
+      //console.log(params);
+      //this.get('shoppingCart').checkout();
+    //  console.log(shoppingCart.items[0].data.quantity);
+    //   for (var i = 0; i < shoppingCart.items.length; i++) {
+    //     var item = shoppingCart.items[i];
+    //     var params = {
+    //       quantity : shoppingCart.items[i].data.quantity
+    //     };
+    //   //  console.log(params.quantity);
+    //     Object.keys(params).forEach(function(key) {
+    //       item.set(key, params[key]);
+    //     });
+    //   item.save();
+    //   }
+   //},
   }
 });

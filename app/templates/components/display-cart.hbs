@@ -3,11 +3,11 @@
   {{#each shoppingCart.items as |item| }}
     <li>{{item.name}} -- {{item.price}}</li>
     <li>Number In Cart: {{item.numberInCart}}</li>
-    <button {{action 'removeFromCart' item}} class="btn btn-warning">Remove from Cart</button>
+    <button {{action 'removeItem' item}} class="btn btn-warning">Remove from Cart</button>
   {{/each}}
 </ul>
 <p>
   Total: {{shoppingCart.total}}
   <br>
-  <button {{action 'checkout' shoppingCart}} class='btn btn-success'>Checkout</button>
+  <button {{action 'checkout' shoppingCart.items}} class='btn btn-success'>Checkout</button>
 </p>
