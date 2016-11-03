@@ -14,24 +14,8 @@ export default Ember.Route.extend({
     removeItem(item){
       this.get('shoppingCart').remove(item);
     },
-    //checkout(params){
-      //console.log(params);
-      //this.get('shoppingCart').checkout();
-    //  console.log(shoppingCart.items[0].data.quantity);
-    //   for (var i = 0; i < shoppingCart.items.length; i++) {
-    //     var item = shoppingCart.items[i];
-    //     var params = {
-    //       quantity : shoppingCart.items[i].data.quantity
-    //     };
-    //   //  console.log(params.quantity);
-    //     Object.keys(params).forEach(function(key) {
-    //       item.set(key, params[key]);
-    //     });
-    //   item.save();
-    //   }
-   //},
-   checkout() {
+    checkout() {
       this.get('shoppingCart').checkout();
-   }
+    }
   }
 });

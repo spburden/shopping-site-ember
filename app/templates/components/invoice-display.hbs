@@ -1,0 +1,6 @@
+<h1>Invoice</h1>
+{{#each shoppingCart.items as |item| }}
+  <li>{{item.name}} -- {{item.price}}</li>
+  <li>Number In Cart: {{item.numberInCart}}</li>
+{{/each}}
+<p>Total: {{shoppingCart.total}}</p>

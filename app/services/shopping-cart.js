@@ -14,8 +14,6 @@ export default Ember.Service.extend({
       var newTotal = parseFloat(this.get('total')) + parseFloat(item.get('price'));
       this.set("total", newTotal.toFixed(2));
     }
-
-    //item.save();
   },
   remove(item) {
     if(item.get('numberInCart') > 0) {
