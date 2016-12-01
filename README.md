@@ -17,9 +17,6 @@ _You will need the following things properly installed on your computer._
 * _[Node.js](http://nodejs.org/) (with NPM)_
 * _[Bower](http://bower.io/)_
 * _[Ember CLI](http://ember-cli.com/)_
-* _[PhantomJS](http://phantomjs.org/)_
-* _Google Chrome Extension "Allow-Control-Allow-Origin:*"_
-
 
 ## Installation
 
