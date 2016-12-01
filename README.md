@@ -1,53 +1,54 @@
-# Shopping-site
+# _Electronics Store_
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## Description
+_An Electronics Store web application where users can add and checkout items in basket. This will modify the store's decrease inventory as soon as checkout is complete._
+
+#### _11/3/2016_
+
+#### By _**Stephen Burden**_
+
+<img src="public/assets/images/screenshot3.png" alt="a screenshot of the site">
 
 ## Prerequisites
 
-You will need the following things properly installed on your computer.
+_You will need the following things properly installed on your computer._
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+* _[Git](http://git-scm.com/)_
+* _[Node.js](http://nodejs.org/) (with NPM)_
+* _[Bower](http://bower.io/)_
+* _[Ember CLI](http://ember-cli.com/)_
+* _[PhantomJS](http://phantomjs.org/)_
+* _Google Chrome Extension "Allow-Control-Allow-Origin:*"_
+
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
+* `git clone https://github.com/amcmerrell/shopping-site-ember`
+* `cd shopping-site-ember`
 * `npm install`
 * `bower install`
 
 ## Running / Development
 
 * `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* _Visit your app at [http://localhost:4200](http://localhost:4200)._
 
-### Code Generators
+## Known Bugs
+_There are currently no known bugs for this project. If you discover any issues, you can reach me via the contact details below._
 
-Make use of the many generators for code, try `ember help generate` for more details
+## Support and contact details
+_If you have any questions about this project, please contact Stephen at spburden@hotmail.com_
 
-### Running Tests
+## Technologies Used
+* _JavaScript_
+* _Ember_
+* _Firebase_
+* _Semantic UI_
+* _Sass_
+* _HTML_
 
-* `ember test`
-* `ember test --server`
+### License
 
-### Building
+*This webpage is licensed under the MIT license.*
 
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+Copyright (c) 2016 **_Stephen Burden_**
