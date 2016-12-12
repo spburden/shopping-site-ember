@@ -7,6 +7,8 @@ _An Electronics Store web application where users can add and checkout items in 
 
 #### By _**Stephen Burden**_
 
+[Click here to view live](https://electronics-store.pagefrontapp.com/)
+
 <img src="public/assets/images/screenshot3.png" alt="a screenshot of the site">
 
 ## Prerequisites
